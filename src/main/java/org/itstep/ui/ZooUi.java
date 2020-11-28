@@ -1,19 +1,17 @@
 package org.itstep.ui;
 
+import org.itstep.time.Date;
 import org.itstep.zoo.*;
 
-import java.util.Date;
 import java.util.Scanner;
 
 import static org.itstep.ui.MenuItems.*;
 
 public class ZooUi {
-   private  final Scanner scanner;
+   private  final Scanner scanner = new Scanner(System.in);
    private final Zoo zoo = new Zoo();
    
-    public ZooUi() {
-        this.scanner = new Scanner(System.in);
-    }
+    public ZooUi() {}
 
     public void start() {
         int menu = 0;
@@ -98,11 +96,10 @@ switch (menu) {
          int weight;
          int id; // Номер вольера
          int time; // Время в годах
-         int animalType;
          int animalType = 0;
 
         System.out.println("Введите кличку: ");
-        name = scanner.nextLine()
+        name = scanner.nextLine();
         System.out.println("Введите возраст: ");
         age = getIntInRange(0 , 100);
         System.out.println("Введите вес животного: ");

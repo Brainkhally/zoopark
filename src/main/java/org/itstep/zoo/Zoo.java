@@ -1,7 +1,8 @@
 package org.itstep.zoo;
 
+import org.itstep.time.Date;
+
 import java.util.Arrays;
-import java.util.Date;
 
 public class Zoo {
     private Animal[] animals = new Animal[0];
